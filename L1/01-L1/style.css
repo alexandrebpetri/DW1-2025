@@ -1,0 +1,40 @@
+/* Estilos para a página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Cor de fundo inicial */
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#btnAzul {
+    background-color: #3498db;
+    color: white;
+}
+
+#btnVerde {
+    background-color: #2ecc71;
+    color: white;
+}
