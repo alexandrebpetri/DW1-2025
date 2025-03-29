@@ -1,0 +1,38 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Container centralizado */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estiliza a imagem */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estiliza o botão */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f50e0e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
