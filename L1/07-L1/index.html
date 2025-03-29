@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Faça a sua matrícula</h1>
+        <div id="inputs">
+            <input type="text" id="name" placeholder="Nome">
+            <span class="error-message" id="nameError"></span><br><br>
+
+            <input type="date" id="birth">
+            <span class="error-message" id="birthError"></span><br><br>
+
+            <input type="email" id="email" placeholder="Email para contato">
+            <span class="error-message" id="emailError"></span><br><br>
+
+            <button onclick="validateForm()" id="btn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
