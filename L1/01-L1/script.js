@@ -1,8 +1,11 @@
-// Função para alterar a cor de fundo
-document.getElementById("btnAzul").addEventListener("click", function() {
+function changeBlue() {
     document.body.style.backgroundColor = "blue";
-});
+    document.getElementById("btnAzul").style.backgroundColor = "white";
+    document.getElementById("btnAzul").style.color = "black";
+}
 
-document.getElementById("btnVerde").addEventListener("click", function() {
+function changeGreen() {
     document.body.style.backgroundColor = "green";
-});
+    document.getElementById("btnVerde").style.backgroundColor = "white";
+    document.getElementById("btnVerde").style.color = "black";
+}
