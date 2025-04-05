@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- TELA DE CONFIGURAÇÃO -->
+  <div id="config" class="home-screen">
+    <h2>Insira os nomes dos times</h2>
+    <input type="text" id="teamAName" placeholder="Nome do Time A">
+    <input type="text" id="teamBName" placeholder="Nome do Time B">
+    <br>
+    <button onclick="startMatch()">Iniciar Partida</button>
+  </div>
+
+  <!-- TELA DO PLACAR -->
+  <div id="scoreboard" class="hidden">
+    <div class="teams-container">
+      <div class="team" id="teamA">
+        <h2 id="displayTeamA">Time A</h2>
+        <div class="score">
+          <h1 id="pointsA">0</h1>
+          <p>Sets: <span id="setsA">0</span></p>
+        </div>
+        <div class="controls">
+          <button onclick="changePoints('A', 1)" disabled>+1</button>
+          <button onclick="changePoints('A', -1)" disabled>-1</button>
+          <button onclick="resetPoints('A')" disabled>Zerar</button>
+        </div>
+      </div>
+
+      <div class="team" id="teamB">
+        <h2 id="displayTeamB">Time B</h2>
+        <div class="score">
+          <h1 id="pointsB">0</h1>
+          <p>Sets: <span id="setsB">0</span></p>
+        </div>
+        <div class="controls">
+          <button onclick="changePoints('B', 1)" disabled>+1</button>
+          <button onclick="changePoints('B', -1)" disabled>-1</button>
+          <button onclick="resetPoints('B')" disabled>Zerar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-controls">
+      <button onclick="resetMatch()" disabled>Reiniciar Partida</button>
+      <button onclick="toggleHistory()">Mostrar Histórico</button>
+    </div>
+
+    <div id="history-container" class="hidden">
+      <button onclick="clearHistory()">Limpar Histórico</button>
+      <h3>Histórico</h3>
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

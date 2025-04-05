@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #111;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: 1px solid #e53935;
+    border-radius: 8px;
+    width: 220px;
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+  }
+  
+  button {
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  button:hover:enabled {
+    background-color: #d32f2f;
+  }
+  
+  #scoreboard {
+    padding: 30px 20px;
+  }
+  
+  .teams-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .team {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #333;
+    width: 280px;
+  }
+  
+  .team h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+  }
+  
+  .score h1 {
+    font-size: 64px;
+    margin: 0;
+    color: #e53935;
+  }
+  
+  .score p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .controls {
+    margin-top: 10px;
+  }
+  
+  .bottom-controls {
+    margin-top: 30px;
+  }
+  
+  #history-container {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  #history {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #history li {
+    padding: 6px 12px;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+    color: #eee;
+  }
+  
+  .hidden {
+    display: none !important;
+  }  
