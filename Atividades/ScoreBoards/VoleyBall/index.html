@@ -4,20 +4,12 @@
   <meta charset="UTF-8">
   <title>Scoreboard</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/Atividades/ScoreBoards/VoleyBall/images/favicon.png" type="image/x-icon">
 </head>
 <body>
-  <!-- TELA DE CONFIGURAÇÃO -->
-  <div id="config" class="home-screen">
-    <h2>Insira os nomes dos times</h2>
-    <input type="text" id="teamAName" placeholder="Nome do Time A">
-    <input type="text" id="teamBName" placeholder="Nome do Time B">
-    <br>
-    <button onclick="startMatch()">Iniciar Partida</button>
-  </div>
 
   <!-- TELA DO PLACAR -->
-  <div id="scoreboard" class="hidden">
+  <div id="scoreboard">
     <div class="teams-container">
       <div class="team" id="teamA">
         <h2 id="displayTeamA">Time A</h2>
@@ -26,9 +18,9 @@
           <p>Sets: <span id="setsA">0</span></p>
         </div>
         <div class="controls">
-          <button onclick="changePoints('A', 1)" disabled>+1</button>
-          <button onclick="changePoints('A', -1)" disabled>-1</button>
-          <button onclick="resetPoints('A')" disabled>Zerar</button>
+          <button onclick="changePoints('A', 1)">+1</button>
+          <button onclick="changePoints('A', -1)">-1</button>
+          <button onclick="resetPoints('A')">Zerar</button>
         </div>
       </div>
 
@@ -39,15 +31,15 @@
           <p>Sets: <span id="setsB">0</span></p>
         </div>
         <div class="controls">
-          <button onclick="changePoints('B', 1)" disabled>+1</button>
-          <button onclick="changePoints('B', -1)" disabled>-1</button>
-          <button onclick="resetPoints('B')" disabled>Zerar</button>
+          <button onclick="changePoints('B', 1)">+1</button>
+          <button onclick="changePoints('B', -1)">-1</button>
+          <button onclick="resetPoints('B')">Zerar</button>
         </div>
       </div>
     </div>
 
     <div class="bottom-controls">
-      <button onclick="resetMatch()" disabled>Reiniciar Partida</button>
+      <button onclick="resetMatch()">Reiniciar Partida</button>
       <button onclick="toggleHistory()">Mostrar Histórico</button>
     </div>
 

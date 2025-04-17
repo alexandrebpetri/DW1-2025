@@ -15,15 +15,6 @@ function startMatch() {
   enableButtons();
 }
 
-function enableButtons() {
-  const buttons = document.getElementsByTagName('button');
-  for (let i = 0; i < buttons.length; i++) {
-    if (buttons[i].textContent !== "Iniciar Partida") {
-      buttons[i].disabled = false;
-    }
-  }
-}
-
 function changePoints(team, value) {
   if (isMatchOver()) {
     return;
@@ -108,9 +99,6 @@ function resetMatch() {
   document.getElementById('pointsB').textContent = 0;
   document.getElementById('setsA').textContent = 0;
   document.getElementById('setsB').textContent = 0;
-
-  document.getElementById('scoreboard').classList.add('hidden');
-  document.getElementById('config').classList.remove('hidden');
 
   document.getElementById('teamAName').value = "";
   document.getElementById('teamBName').value = "";
